@@ -1,5 +1,8 @@
 set nocompatible
 
+set encoding=utf-8
+set fileencoding=utf-8
+
 set backup
 set undofile
 
@@ -11,6 +14,8 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   colorscheme darkblue
   set hlsearch
+  set guifont=DejaVu_Sans_Mono:h11:cEASTEUROPE:qDRAFT
+  set lines=999 columns=999
 endif
 
 set number
