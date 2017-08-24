@@ -23,6 +23,10 @@ set incsearch
 set ignorecase
 set scrolloff=3
 
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 set backspace=indent,eol,start
 map Q gq
 inoremap <C-U> <C-G>u<C-U>
