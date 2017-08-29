@@ -1,40 +1,78 @@
+" =======================================
+" Vim configuration file of Balazs Zatik.
+" =======================================
+
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
 set nocompatible
 
-set encoding=utf-8
-set fileencoding=utf-8
-
-set backup
-set undofile
-
-set history=50
-set ruler
-set showcmd
-
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  colorscheme darkblue
-  set hlsearch
+" If there is a GUI (gVIM).
+if has("gui_running")
   set guifont=DejaVu_Sans_Mono:h11:cEASTEUROPE:qDRAFT
   set lines=999 columns=999
 endif
 
-set number
-set incsearch
-set ignorecase
-set scrolloff=3
+" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries.
+if has('win32')
+  set guioptions-=t
+endif
 
+" Set encoding to UTF-8.
+set encoding=utf-8
+set fileencoding=utf-8
+
+" Backup settings.
+set backupdir=~/vimtmp,.
+set undodir=~/vimtmp,.
+set directory=~/vimtmp,.
+
+" Set colors.
+syntax on               " turn on syntax highlighting
+colorscheme darkblue    " set the color scheme
+
+" Search settings.
+set hlsearch            " highlight search results
+set incsearch           " turn on incremental searching
+set ignorecase          " ignore case when searching
+
+" Miscellaneous.
+set history=200         " keep 200 lines of command line history
+set ch=1		" command line height (how many lines)
+set ruler               " show the cursor position all the time
+set showcmd             " display incomplete commands
+set wildmenu            " display completion matches in a status line
+
+set ttimeout            " time out for key codes
+set ttimeoutlen=100     " wait up to 100ms after Esc for special key
+
+set number              " show line numbers
+set scrolloff=3         " set scrolling offset
+set display=truncate    " show @@@ in the last line if it is truncated
+set nrformats-=octal    " do not recognize octal numbers for Ctrl-A and Ctrl-X
+set mousehide		" hide the mouse when typing text
+
+" Tab size.
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+" Enable mouse if present.
+if has('mouse')
+  set mouse=a
+endif
+
+" Disable beeping and visual bell on errors.
+set belloff=all
+
+" Key mappings.
 set backspace=indent,eol,start
 map Q gq
 inoremap <C-U> <C-G>u<C-U>
 inoremap <C-W> <C-G>u<C-W>
 
-if has('mouse')
-  set mouse=a
-endif
+" Make shift-insert work like in Xterm.
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -64,7 +102,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent            " always set autoindenting on
 
 endif " has("autocmd")
 
