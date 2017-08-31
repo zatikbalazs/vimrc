@@ -28,6 +28,12 @@ set backupdir=~/vimtmp,.
 set undodir=~/vimtmp,.
 set directory=~/vimtmp,.
 
+" Finding files.
+" --------------
+" Search down into subfolders.
+" Provides tab-completion for all file-related tasks.
+set path+=**
+
 " Make Vim colorful.
 syntax on               " turn on syntax highlighting
 colorscheme darkblue    " set the color scheme
