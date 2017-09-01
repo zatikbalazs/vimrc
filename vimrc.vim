@@ -220,6 +220,8 @@ packadd matchit
 " Autocomplete text: CTRL + n, CTRL + p
 " Autocomplete file name: CTRL + x CTRL + f
 " Open file under cursor: gf
+" Copy to system clipboard: "*y
+" Paste from system clipboard: "*p
 " Save current file: :w
 " Quit file: :q
 " Save current file and quit: :wq
