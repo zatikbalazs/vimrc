@@ -176,3 +176,36 @@ endif
 " The matchit plugin makes the % command work better, but it is not backwards
 " compatible.
 packadd matchit
+
+
+" Tips & Tricks
+" =============
+"
+" Navigation within a file:
+" -------------------------
+" Move cursor one character at a time: hjkl
+" Go to first line: gg
+" Go to last line: G
+" Go to line 36: 36G
+"
+" Help with coding:
+" -----------------
+" Autocomplete word: CTRL + n, CTRL + p
+"
+" Save & quit:
+" ------------
+" Save file: w
+" Save file and quit: wq
+" Save all files: wa
+" Quit without saving: q!
+"
+" Switching between files:
+" ------------------------
+" Search for a file: :find filename + TAB
+" Open file for editing: :e filename + TAB
+" Open file explorer: :Explore
+" List buffers: :ls
+" Go to next buffer: :bn
+" Go to previous buffer: :bp
+" Go to buffer #3: :b3
+" Search buffers by filename: :b filename + TAB
