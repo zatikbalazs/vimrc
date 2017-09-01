@@ -180,32 +180,48 @@ packadd matchit
 
 " Tips & Tricks
 " =============
-"
-" Navigation within a file:
-" -------------------------
-" Move cursor one character at a time: hjkl
-" Go to first line: gg
-" Go to last line: G
-" Go to line 36: 36G
-"
-" Help with coding:
-" -----------------
-" Autocomplete word: CTRL + n, CTRL + p
-"
-" Save & quit:
-" ------------
-" Save file: w
-" Save file and quit: wq
-" Save all files: wa
-" Quit without saving: q!
-"
-" Switching between files:
-" ------------------------
-" Search for a file: :find filename + TAB
+" Get help: :help, :he {subject}
+" Move cursor one character at a time: h,j,k,l
+" Move cursor to the highest position on the page: H
+" Move cursor to the middle position on the page: M
+" Move cursor to the lowest position on the page: L
+" Move screen half a page down: CTRL + d
+" Move screen half a page up: CTRL + u
+" Go to first line of the file: gg
+" Go to last line of the file: G
+" Go to line #36 of the file: 36G
+" Set a mark to be referenced from within the current file: m + {a-z}
+" Set a mark that can be referenced from other files as well: m + {A-Z}
+" Jump to a mark: '{a-zA-Z}
+" Jump to next line with a lowercase mark: ]'
+" Jump to previous line with a lowercase mark: ['
+" List marks: :marks {a-zA-Z}
+" Delete marks: :delmarks, :delm {a-zA-Z}
+" Delete all lowercase marks for the current buffer (a-z): :delmarks!, :delm!
 " Open file for editing: :e filename + TAB
 " Open file explorer: :Explore
 " List buffers: :ls
 " Go to next buffer: :bn
 " Go to previous buffer: :bp
 " Go to buffer #3: :b3
+" Delete buffer #3: :bd3
+" Wipe out buffer #3: :bw3
 " Search buffers by filename: :b filename + TAB
+" Search for a file: :find filename + TAB
+" Find all occurrences of text: *
+" Jump to next search result: n
+" Jump to previous search result: N
+" Find in current file (forward): /searchterm
+" Find in current file (backward): ?searchterm
+" Find and replace (substitute) all occurrences in current file: :%s/old/new/gc
+" Count all occurrences in current file: :%s/searchterm//gn
+" Remove highlighting of search results: CTRL + l
+" Jump to matching symbols: %
+" Autocomplete text: CTRL + n, CTRL + p
+" Autocomplete file name: CTRL + x CTRL + f
+" Open file under cursor: gf
+" Save current file: :w
+" Quit file: :q
+" Save current file and quit: :wq
+" Save all files: :wa
+" Quit without saving: :q!
