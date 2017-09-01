@@ -1,6 +1,6 @@
-" =======================================
-" Vim configuration file of Balazs Zatik.
-" =======================================
+" ===========================
+" Vimrc file of Balazs Zatik.
+" ===========================
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -10,8 +10,9 @@ set nocompatible
 
 " If there is a GUI (gVim).
 if has("gui_running")
-  set guifont=DejaVu_Sans_Mono:h11:cEASTEUROPE:qDRAFT
-  set lines=999 columns=999
+  set guifont=DejaVu_Sans_Mono:h11:cEASTEUROPE:qDRAFT     " set the font to be used in GUI
+  set lines=999 columns=999                               " maximize the default window size
+  set mousehide                                           " hide the mouse when typing text
 endif
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries.
@@ -23,7 +24,7 @@ endif
 set encoding=utf-8
 set fileencoding=utf-8
 
-" Make centralized backup directories.
+" Use centralized backup directories.
 set backupdir=~/vimtmp,.
 set undodir=~/vimtmp,.
 set directory=~/vimtmp,.
@@ -66,14 +67,13 @@ set smartcase           " match case when using capital letters
 " Miscellaneous.
 set number              " show line numbers on the left
 set history=200         " keep 200 lines of command line history
-set cmdheight=2		" set the command window height to 2 lines
+set cmdheight=2         " set the command window height to 2 lines
 set ruler               " show the cursor position all the time
 set laststatus=2        " always display the status line at the bottom
 set showcmd             " show partial commands in the last line of the screen
 set wildmenu            " better command-line completion
 set scrolloff=3         " set scrolling offset
 set nrformats-=octal    " do not recognize octal numbers for Ctrl-A and Ctrl-X
-set mousehide		" hide the mouse when typing text
 
 " Enable mouse for all modes.
 if has('mouse')
