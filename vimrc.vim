@@ -187,6 +187,7 @@ packadd matchit
 " Move cursor to the lowest position on the page: L
 " Move screen half a page down: CTRL + d
 " Move screen half a page up: CTRL + u
+" Move screen so that current line is at the center: zz
 " Go to first line of the file: gg
 " Go to last line of the file: G
 " Go to line #36 of the file: 36G
@@ -225,5 +226,6 @@ packadd matchit
 " Save current file: :w
 " Quit file: :q
 " Save current file and quit: :wq
+" Save current file and quit: ZZ
 " Save all files: :wa
 " Quit without saving: :q!
