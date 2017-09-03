@@ -1,7 +1,16 @@
 " ===========================
 " Vimrc file of Balazs Zatik.
 " ===========================
-
+" 
+" How to use this file:
+" ---------------------
+" 1. Clone this repo anywhere on your hard disk.
+" 2. In your default .vimrc file include the following line:
+"    source /path/to/vimrc/vimrc.vim
+" 3. Create folder ~/vimtmp to store backups and temporary files.
+" 4. You are done. Happy Vimming!
+"
+"
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 " Set 'nocompatible' to ward off unexpected things that your distro might
