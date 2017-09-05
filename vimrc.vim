@@ -4,10 +4,10 @@
 " 
 " How to use this file:
 " ---------------------
-" 1. Clone this repo anywhere on your hard disk.
+" 1. Clone the repo anywhere on your hard disk.
 " 2. In your default .vimrc file include the following line:
-"    source /path/to/vimrc/vimrc.vim
-" 3. Create folder ~/vimtmp to store backups and temporary files.
+"    source /your/path/to/vimrc/vimrc.vim
+" 3. Create folder at ~/vimtmp to store backups and temporary files.
 " 4. You are done. Happy Vimming!
 "
 "
@@ -200,6 +200,20 @@ packadd matchit
 " Go to first line of the file: gg
 " Go to last line of the file: G
 " Go to line #36 of the file: 36G
+" Insert text before the cursor: i
+" Insert text before the first non-blank character in the line: I
+" Append text after the cursor: a
+" Append text at the end of the line: A
+" Begin a new line below the cursor and insert text: o
+" Begin a new line above the cursor and insert text: O
+" Delete characters under and after the cursor: x
+" Delete characters before the cursor: X
+" Delete the characters under the cursor until the end of the line: D
+" Delete line: dd
+" Delete selected text and/or lines: d
+" Replace the character under the cursor: r
+" Replace characters continuously: R
+" Switch case of character or selected text: ~
 " Set a mark to be referenced from within the current file: m + {a-z}
 " Set a mark that can be referenced from other files as well: m + {A-Z}
 " Jump to a mark: '{a-zA-Z}
@@ -232,6 +246,10 @@ packadd matchit
 " Open file under cursor: gf
 " Copy to system clipboard: "*y
 " Paste from system clipboard: "*p
+" Undo changes: u
+" Undo all latest changes on one line: U
+" Redo changes: CTRL + r
+" Repeat last command: .
 " Save current file: :w
 " Quit file: :q
 " Save current file and quit: :wq
