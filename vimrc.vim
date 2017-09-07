@@ -38,6 +38,10 @@ set backupdir=~/vimtmp,.
 set undodir=~/vimtmp,.
 set directory=~/vimtmp,.
 
+" File browser.
+let g:netrw_banner=0      " disable banner
+let g:netrw_liststyle=3   " tree view
+
 " Finding files.
 " --------------
 " Search down into subfolders.
@@ -219,11 +223,25 @@ packadd matchit
 " Jump to a mark: '{a-zA-Z}
 " Jump to next line with a lowercase mark: ]'
 " Jump to previous line with a lowercase mark: ['
-" List marks: :marks {a-zA-Z}
+" List marks: :marks
 " Delete marks: :delmarks, :delm {a-zA-Z}
 " Delete all lowercase marks for the current buffer (a-z): :delmarks!, :delm!
-" Open file for editing: :e filename + TAB
-" Open file explorer: :Explore
+" Open file browser: :edit., :e.
+" File browser help: <F1>
+" Make browsing directory the current directory: c
+" Find a file in current directory: :find filename + TAB
+" Open file in a tab from file browser: t
+" List all tabs: :tabs
+" Go to next tab: gt
+" Go to previous tab: gT
+" Go to tab in position i: {i}gt
+" Go to first tab: :tabfirst
+" Go to last tab: :tablast
+" Move current tab to first: :tabm 0
+" Move current tab to last: :tabm
+" Move current tab to position i+1: :tabm {i}
+" Close all other tabs (show only the current tab): :tabonly
+" Show each buffer in a tab: :tab ball
 " List buffers: :ls
 " Go to next buffer: :bn
 " Go to previous buffer: :bp
@@ -231,7 +249,6 @@ packadd matchit
 " Delete buffer #3: :bd3
 " Wipe out buffer #3: :bw3
 " Search buffers by filename: :b filename + TAB
-" Search for a file: :find filename + TAB
 " Find all occurrences of text: *
 " Jump to next search result: n
 " Jump to previous search result: N
@@ -252,7 +269,8 @@ packadd matchit
 " Repeat last command: .
 " Save current file: :w
 " Quit file: :q
+" Quit without saving: :q!
 " Save current file and quit: :wq
 " Save current file and quit: ZZ
 " Save all files: :wa
-" Quit without saving: :q!
+" Quit all files: :qa
