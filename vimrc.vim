@@ -75,6 +75,10 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+" Make shady characters visible.
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
+
 " Search settings.
 set hlsearch            " highlight search results
 set incsearch           " turn on incremental searching
