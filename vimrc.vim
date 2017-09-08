@@ -76,7 +76,7 @@ set shiftwidth=2
 set softtabstop=2
 
 " Make shady characters visible.
-exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set listchars=tab:~~,nbsp:~,trail:~
 set list
 
 " Search settings.
