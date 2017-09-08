@@ -19,9 +19,9 @@ set nocompatible
 
 " If there is a GUI (gVim).
 if has("gui_running")
-  set guifont=DejaVu_Sans_Mono:h11:cEASTEUROPE:qDRAFT     " set the font to be used in GUI
-  set lines=999 columns=999                               " maximize the default window size
-  set mousehide                                           " hide the mouse when typing text
+  set guifont=DejaVu_Sans_Mono:h11:cEASTEUROPE:qDRAFT   " set the GUI font
+  set lines=999 columns=999                             " default window size
+  set mousehide                                         " hide mouse when typing
 endif
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries.
@@ -51,6 +51,10 @@ set path+=**
 " Make Vim colorful.
 syntax on               " turn on syntax highlighting
 colorscheme darkblue    " set the color scheme
+
+" Make the 81st column stand out.
+highlight ColorColumn ctermbg=magenta
+set colorcolumn=81
 
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
