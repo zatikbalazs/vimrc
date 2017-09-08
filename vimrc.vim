@@ -83,6 +83,7 @@ set smartcase           " match case when using capital letters
 
 " Miscellaneous.
 set number              " show line numbers on the left
+set relativenumber      " line numbers as relative numbers
 set history=200         " keep 200 lines of command line history
 set cmdheight=2         " set the command window height to 2 lines
 set ruler               " show the cursor position all the time
@@ -214,6 +215,13 @@ packadd matchit
 " Append text at the end of the line: A
 " Begin a new line below the cursor and insert text: o
 " Begin a new line above the cursor and insert text: O
+" Change word: cw
+" Change inside word: ciw
+" Change inside tags: cit
+" Change inside {symbol}: ci{symbol}
+" Change until end of line: c$
+" Yank until end of line: Y
+" Delete until end of line: D
 " Delete characters under and after the cursor: x
 " Delete characters before the cursor: X
 " Delete the characters under the cursor until the end of the line: D
