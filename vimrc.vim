@@ -219,6 +219,8 @@ packadd matchit
 " Change inside word: ciw
 " Change inside tags: cit
 " Change inside {symbol}: ci{symbol}
+" Delete inside {symbol}: di{symbol}
+" Yank inside {symbol}: yi{symbol}
 " Change until end of line: c$
 " Yank until end of line: Y
 " Delete until end of line: D
