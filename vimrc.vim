@@ -207,7 +207,7 @@ packadd matchit
 " Move screen so that current line is at the center: zz
 " Go to first line of the file: gg
 " Go to last line of the file: G
-" Go to line #36 of the file: 36G
+" Go to line {i} of the file: {i}G
 " Insert text before the cursor: i
 " Insert text before the first non-blank character in the line: I
 " Append text after the cursor: a
@@ -249,9 +249,9 @@ packadd matchit
 " List buffers: :ls
 " Go to next buffer: :bn
 " Go to previous buffer: :bp
-" Go to buffer #3: :b3
-" Delete buffer #3: :bd3
-" Wipe out buffer #3: :bw3
+" Go to buffer #{i}: :b{i}
+" Delete buffer #{i}: :bd{i}
+" Wipe out buffer #{i}: :bw{i}
 " Search buffers by filename: :b filename + TAB
 " Find all occurrences of text: *
 " Jump to next search result: n
