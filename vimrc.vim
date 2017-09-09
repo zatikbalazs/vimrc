@@ -238,14 +238,13 @@ packadd matchit
 " Replace the character under the cursor: r
 " Replace characters continuously: R
 " Switch case of character or selected text: ~
-" Set a mark to be referenced from within the current file: m + {a-z}
-" Set a mark that can be referenced from other files as well: m + {A-Z}
-" Jump to a mark: '{a-zA-Z}
-" Jump to next line with a lowercase mark: ]'
-" Jump to previous line with a lowercase mark: ['
+" Set mark: m + {a-z}
+" Jump to mark: '{a-z}
+" Jump to next line with a mark: ]'
+" Jump to previous line with a mark: ['
 " List marks: :marks
-" Delete marks: :delmarks, :delm {a-zA-Z}
-" Delete all lowercase marks for the current buffer (a-z): :delmarks!, :delm!
+" Delete mark: :delm {a-z}
+" Delete all marks: :delm!
 " Open file browser: :edit., :e.
 " File browser help: :help netrw
 " Make browsing directory the current directory: c
