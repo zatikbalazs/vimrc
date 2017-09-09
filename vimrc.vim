@@ -1,7 +1,7 @@
 " ===========================
 " Vimrc file of Balazs Zatik.
 " ===========================
-" 
+"
 " How to use this file:
 " ---------------------
 " 1. Clone the repo anywhere on your hard disk.
@@ -152,6 +152,8 @@ set pastetoggle=<F11>
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
+" Snippets.
+nnoremap ,html :-1read vimrc/snippets/html.html<CR>3j11li
 
 " Only do this part when compiled with support for autocommands.
 " --------------------------------------------------------------
@@ -245,10 +247,14 @@ packadd matchit
 " Delete marks: :delmarks, :delm {a-zA-Z}
 " Delete all lowercase marks for the current buffer (a-z): :delmarks!, :delm!
 " Open file browser: :edit., :e.
-" File browser help: <F1>
+" File browser help: :help netrw
 " Make browsing directory the current directory: c
 " Find a file in current directory: :find filename + TAB
 " Open file in a tab from file browser: t
+" Delete a file from the directory: D
+" Create a new directory: d
+" Create a new file: :tabe filename
+" Rename file: R
 " List all tabs: :tabs
 " Go to next tab: gt
 " Go to previous tab: gT
