@@ -39,8 +39,15 @@ set undodir=~/vimtmp,.
 set directory=~/vimtmp,.
 
 " File browser.
-let g:netrw_banner=0      " disable banner
-let g:netrw_liststyle=3   " tree view
+let g:netrw_banner=0        " disable banner
+let g:netrw_liststyle=3     " tree view
+let g:netrw_browse_split=4  " open in previous window
+let g:netrw_altv=1          " change from left splitting to right splitting
+let g:netrw_winsize=25      " fixed width of the directory explorer
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
 
 " Finding files.
 " --------------

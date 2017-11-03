@@ -1,2 +1,2 @@
 # vimrc
-My configuration file for the Vim text editor.
+My configuration for the Vim text editor.
