@@ -99,7 +99,7 @@ set ruler               " show the cursor position all the time
 set laststatus=2        " always display the status line at the bottom
 set showcmd             " show partial commands in the last line of the screen
 set wildmenu            " better command-line completion
-set scrolloff=3         " set scrolling offset
+set scrolloff=0         " set scrolling offset
 set nrformats-=octal    " do not recognize octal numbers for Ctrl-A and Ctrl-X
 
 " Enable mouse for all modes.
@@ -219,6 +219,7 @@ packadd matchit
 " Move screen so that current line is at the center: zz
 " Go to first line of the file: gg
 " Go to last line of the file: G
+" Show file information at the bottom: CTRL + G
 " Go to line {i} of the file: {i}G
 " Insert text before the cursor: i
 " Insert text before the first non-blank character in the line: I
