@@ -233,12 +233,14 @@ packadd matchit
 " Delete inside {symbol}: di{symbol}
 " Yank inside {symbol}: yi{symbol}
 " Change until end of line: c$
+" Change until end of line: C
 " Yank until end of line: Y
+" Yank line: yy
+" Delete (cut) line: dd
 " Delete until end of line: D
 " Delete characters under and after the cursor: x
 " Delete characters before the cursor: X
 " Delete the characters under the cursor until the end of the line: D
-" Delete line: dd
 " Delete selected text and/or lines: d
 " Replace the character under the cursor: r
 " Replace characters continuously: R
