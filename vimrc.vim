@@ -255,7 +255,7 @@ packadd matchit
 " Open file browser: :edit., :e.
 " File browser help: :help netrw
 " Make browsing directory the current directory: c
-" Find a file in current directory: :find filename + TAB
+" Find file in current directory and open in new tab: :tabfind filename + TAB
 " Open file in a tab from file browser: t
 " Delete a file from the directory: D
 " Create a new directory: d
