@@ -246,6 +246,10 @@ packadd matchit
 " Replace the character under the cursor: r
 " Replace characters continuously: R
 " Switch case of character or selected text: ~
+" Enter select mode: v
+" Enter line select mode: V
+" Copy selected: y
+" Enter block/column select mode: Ctrl + v
 " Set mark: m + {a-z}
 " Jump to mark: '{a-z}
 " Jump to next line with a mark: ]'
