@@ -252,6 +252,7 @@ packadd matchit
 " Enter line select mode: V
 " Copy selected: y
 " Enter block/column select mode: Ctrl + v
+" Copy and replace word: yiw ... viwp
 " Set mark: m + {a-z}
 " Jump to mark: '{a-z}
 " Jump to next line with a mark: ]'
