@@ -211,6 +211,8 @@ packadd matchit
 " =============
 " Get help: :help, :he {subject}
 " Move cursor one character at a time: h,j,k,l
+" Move cursor to start of line: 0
+" Move cursor to end of line: $
 " Move cursor to the highest position on the page: H
 " Move cursor to the middle position on the page: M
 " Move cursor to the lowest position on the page: L
